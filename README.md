@@ -1,5 +1,5 @@
 # nextUsage
-Keyboard shortcut bindable script for [BlackMagic's DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/)
+Keyboard shortcut bindable script for [BlackMagic's DaVinci Resolve](https://www.blackmagicdesign.com/products/davinciresolve/) that jumps to the next usage of a clip from the mediapool in the current timeline.
 
 ## Installing Script
 ***Note**: Script bindings change based on the page you’re on, there are folders within the scripts dropdown like “Edit”, “Color”, and “Deliver”. When on one of those pages the scripts showing will be from those folders. You can still access them from any page by navigating the drop downs. This is why I place keyboard shortcuts in their own folder unchanged by page changes.*
