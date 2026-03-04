@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 # Created by: Moksh Chitkara
-# Last Update: Feb 27th 2026
-# v1.0.0
+# Last Update: Mar 4th 2026
+# v1.0.1
 # Copyright (C) 2026  Moksh Chitkara
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
@@ -23,7 +23,7 @@ def get_media():
 def get_current_frames(timeline):
     
     tc = timeline.GetCurrentTimecode()
-    fps = int(timeline.GetSetting("timelineFrameRate"))
+    fps = float(timeline.GetSetting("timelineFrameRate"))
     df = bool(int(timeline.GetSetting("timelineDropFrameTimecode")))
     
     if int(tc[9:]) > fps:
@@ -60,7 +60,7 @@ def get_current_frames(timeline):
 # output: timecode in format "##:##:##:##"
 def get_tc(frames, timeline):
         frames = abs(frames)
-        fps = int(timeline.GetSetting("timelineFrameRate"))
+        fps = float(timeline.GetSetting("timelineFrameRate"))
         df = bool(int(timeline.GetSetting("timelineDropFrameTimecode")))
 
         # Drop frame calculation using the Duncan/Heidelberger method.
@@ -166,4 +166,5 @@ def main():
 
 if __name__ == "__main__":
     main()    
+
 
